@@ -1,0 +1,109 @@
+* {
+  font-family: "Inconsolata", monospace;
+}
+body {
+  background-image: url("/public/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.Header {
+  text-align: center;
+  color: #fff;
+}
+
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.Message-content > .username {
+  display: block;
+  color: #efefef;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: #89ad06;
+  color: #fff;
+  display: inline-block;
+}
+
+.currentMember > .Message-content .text {
+  background-color: #00acf0;
+  color: #efefef;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #414141;
+  flex-grow: 1;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #fcfcfc10;
+}
+
+button img {
+  width: 30px;
+}
